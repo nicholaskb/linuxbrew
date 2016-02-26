@@ -1,6 +1,6 @@
 FROM ubuntu
 MAINTAINER Nicholas Baro  <nicholas.baro@sbgenomics.com>
-
+RUN localedef -i en_US -f UTF-8 en_US.UTF-8
 RUN sudo apt-get update && sudo apt-get upgrade -y
 RUN sudo sudo apt-get install -y build-essential make cmake scons curl git \
                                ruby autoconf automake autoconf-archive \
