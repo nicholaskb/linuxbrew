@@ -14,7 +14,7 @@ ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:/usr/lib
 
 # Until LinuxBrew is fixed, the following is required.
 # See: https://github.com/Homebrew/linuxbrew/issues/47
-ENV LINUXBREWHOME=opt/linuxbrew
+ENV LINUXBREWHOME=/opt/linuxbrew
 ENV PATH=$LINUXBREWHOME/bin:$PATH
 ENV MANPATH=$LINUXBREWHOME/man:$MANPATH
 ENV PKG_CONFIG_PATH=$LINUXBREWHOME/lib64/pkgconfig:$LINUXBREWHOME/lib/pkgconfig:$PKG_CONFIG_PATH
